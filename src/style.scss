@@ -1,0 +1,246 @@
+.main {
+    margin: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .chat {
+        flex: 2;
+        height: 100vh;
+        border-left: none;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+
+        .navbar {
+            background-color: darkgray;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .logout {
+                button {
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border: none;
+                    border-radius: 10px;
+                }
+
+                button:hover {
+                    background-color: darkred
+                }
+            }
+
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+        }
+
+        .messages {
+            height: calc(100% - 160px);
+            overflow: scroll;
+        }
+
+        .message {
+            margin: 5px 10px;
+            background-color: cyan;
+            width: 80%;
+            padding: 5px;
+            border-radius: 0px 0px 0px 20px; 
+
+            p {
+                font-size: 15px;
+            } 
+
+            span {
+                font-size: 9px;
+            }
+        }
+
+        .message-user {
+            margin: 5px 10px;
+            background-color: lightgreen;
+            width: 80%;
+            padding: 5px;
+            border-radius: 0px 0px 0px 20px; 
+
+            p {
+                font-size: 15px;
+            } 
+
+            span {
+                font-size: 9px;
+            }
+
+            button {
+                background-color: green;
+                color: white;
+                padding: 5px 10px;
+                border: none;
+                border-radius: 10px;
+            }
+            button:hover {
+                background-color: darkgreen;
+            }
+        }
+
+        .inputArea {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            input {
+                width: 100%;
+                padding: 20px;
+                border: none;
+                height: 40px;
+            }
+
+            button {
+                background-color: blue;
+                color: white;
+                padding: 20px 60px;
+                border: none;
+                border-radius: 0px 00px 10px 0px;
+            }
+
+            button:hover {
+                background-color: darkblue;
+                color: white;
+                padding: 20px 60px;
+                border: none;
+            }
+        }
+    }
+
+    .sidebar {
+        flex: 1;
+        background-color: lightgrey;
+        height: 100vh;
+        border-radius: 10px;
+        align-items: center;
+        overflow: scroll;
+
+        .navbar {
+            background-color: darkgray;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .profile {
+                display: flex;
+                flex-direction: row;
+                gap:20px;
+
+                img {
+                    background-color: white;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .user {
+                    font-size: 20px;
+                }
+            }
+
+            .logout {
+                button {
+                    background-color: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border: none;
+                    border-radius: 10px;
+                }
+
+                button:hover {
+                    background-color: darkred
+                }
+            }
+        }
+
+        .single_action {
+            margin-top: 5px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: center;
+            padding: 10px;
+
+            .actionText {
+                font-size: 20px;
+            }
+
+            button {
+                background-color: green;
+                color: white;
+                padding: 5px 20px;
+                border: none;
+                border-radius: 10px;
+            }
+            
+            button:hover {
+                background-color: darkgreen;
+            }
+        }
+
+        .double_action {
+            margin-top: 5px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: center;
+            padding: 10px;
+
+            .actionText {
+                font-size: 20px;
+            }
+
+            button {
+                background-color: green;
+                color: white;
+                padding: 5px 20px;
+                border: none;
+                border-radius: 10px;
+            }
+            
+            button:hover {
+                background-color: darkgreen;
+            }
+        }
+    }
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    flex-direction: column;
+
+    button {
+        padding: 20px 60px;
+        border-radius: 20px;
+        background-color: white;
+        color: black;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    button:hover {
+        background-color: lightgrey;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
